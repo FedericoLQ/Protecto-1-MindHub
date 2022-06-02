@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: rgba(248, 255, 181, 0.507);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Header*/
+.hero {
+  background-image: url(../assets/hockey-ice-puck-goalkeeper-hockey-arena-besthqwallpapers.com-1920x1080.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.contenido-hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.295);
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.918);
+}
+
+nav a {
+  color: aliceblue;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+nav > a:hover {
+  background-color: rgba(255, 221, 70, 0.733);
+  color: rgba(0, 0, 0, 0.719);
+  transition: 0.7s;
+}
+.transi {
+  transition: 2s;
+}
+.active {
+  background-color: rgba(248, 46, 46, 0.568);
+}
+@media (max-width: 600px) {
+  nav,
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+}
+/*Logo/img/h2 */
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo__img {
+  height: 10rem;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: rgb(253, 207, 0);
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.text-center {
+  background-color: rgb(255, 221, 70);
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.3rem;
+  margin-bottom: 2rem;
+}
+/*MAIN*/
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+}
+
+article {
+  margin-bottom: 2rem;
+}
+.contenedor {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: solid 7px rgb(253, 207, 0);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: rgba(241, 226, 11, 0.089);
+}
+/*LISTAS*/
+.cabecero {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+dd {
+  text-indent: 2rem;
+}
+
+.li-sangria {
+  margin-left: 4rem;
+}
+
+span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.separacion {
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style-position: inside;
+}
+/*TABLAS*/
+table {
+  width: 100%;
+  align-items: center;
+}
+table,
+tr,
+th,
+td {
+  border: 5px solid rgba(255, 0, 0, 0);
+}
+
+table {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.td-s {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.452);
+  color: aliceblue;
+}
+
+.tabla {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.izquierda {
+  display: block;
+}
+
+caption {
+  text-align: start;
+  font-style: italic;
+}
+caption p {
+  padding-top: 1rem;
+  text-decoration: underline;
+}
+.show {
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.show th,
+td {
+  border: solid 2px rgb(253, 207, 0);
+  padding: 1rem;
+}
+
+th {
+  text-align: center;
+}
+thead {
+  background-color: rgba(210, 105, 30, 0.877);
+  color: azure;
+}
+tbody tr {
+  background-color: rgba(105, 105, 105, 0.582);
+}
+tbody tr:nth-child(even) {
+  background-color: rgba(212, 212, 212, 0.61);
+}
+
+.theads {
+  background-color: rgba(210, 105, 30, 0.89);
+  color: azure;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.foot div {
+  margin-top: 1rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.sup {
+  margin-bottom: 2rem;
+}
+
+.sup p {
+  margin-top: 1rem;
+}
+
+.maptd {
+  padding: 0rem;
+}
+
+iframe {
+  height: 3rem;
+  transition: 0.3s;
+}
+
+iframe:hover {
+  height: 10rem;
+  transition: 1s;
+}
+/*FORMULARIO*/
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-left: 40vh;
+  margin-right: 40vh;
+  margin-bottom: 5vh;
+  background-color: rgba(83, 138, 182, 0.13);
+  padding: 2rem 2rem 0rem 2rem;
+  border: solid 10px rgb(253, 207, 0);
+  border-radius: 2%;
+}
+form p {
+  margin-bottom: 20px;
+}
+
+.pform {
+  margin-bottom: 0px;
+}
+
+.boton {
+  text-align: center;
+}
+
+.pposition {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
